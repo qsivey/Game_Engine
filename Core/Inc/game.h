@@ -21,55 +21,55 @@ typedef char ch;
 
 // ====================== GAME ENGINE DEFINES ======================
 
-#define GAME_DIFFICULTY				1			// Affects the number of enemies and the boss's health points
+#define GAME_DIFFICULTY				1		// Affects the number of enemies and the boss's health points
 #define GAME_LVL_PASS_SCORE			100000		// Account for passing the level
 
-#define LVL_TEST_MP					1			// The number that determines the level of the start of the game
+#define LVL_TEST_MP				1		// The number that determines the level of the start of the game
 #define LVL_TEST_PASS				LVL_PASS	// LVL_PASS, BOSS_PASS or GAME_OVER only!
 
 #define DISPLAY_WIDTH				128
 #define DISPLAY_HEIGHT				64
 
-#define SPRITE8						8
-#define SPRITE16					16
-#define SPRITE32					32
-#define SPRITE64					64
+#define SPRITE8					8
+#define SPRITE16				16
+#define SPRITE32				32
+#define SPRITE64				64
 
-#define STARSHIP_SPEED				2			// 1 -> 3
+#define STARSHIP_SPEED				2		// 1 -> 3
 #define STARSHIP_SHIELD				100 		// 100 -> 300 (the less the more difficult)
 #define STARSHIP_MAX_HP				5
 
-#define BULLET_SPEED 				4			// 2 -> 4
-#define BULLET_QUANTITY 			20			// Simultaneous number of bullets on the screen
+#define BULLET_SPEED 				4		// 2 -> 4
+#define BULLET_QUANTITY 			20		// Simultaneous number of bullets on the screen
 #define BULLET_POWER				20
 
-#define ENEMY_SPEED 				2			// 1 -> 3 (the more the harder)
-#define ENEMY_MAX_QANT 				10			// 5 -> 30 (the more the harder)
-#define ENEMY_APPEAR_PROBABILITY	400			// 100 -> 1000 (the less the more difficult)
+#define ENEMY_SPEED 				2		// 1 -> 3 (the more the harder)
+#define ENEMY_MAX_QANT 				10		// 5 -> 30 (the more the harder)
+#define ENEMY_APPEAR_PROBABILITY		400		// 100 -> 1000 (the less the more difficult)
 #define ENEMY_KILL_SCORE			123
-#define ENEMY_KILL_COLLISION_SCORE	ENEMY_KILL_SCORE / 2
+#define ENEMY_KILL_COLLISION_SCORE		ENEMY_KILL_SCORE / 2
 
-#define CARE_SPEED 					1			// 1 -> 3
+#define CARE_SPEED 				1		// 1 -> 3
 #define CARE_MAX_QANT 				1
-#define CARE_APPEAR_PROBABILITY		500 		// 100 -> 500 (the less the more easy)
-#define CARE_COLLISION_SCORE		20000
+#define CARE_APPEAR_PROBABILITY			500 		// 100 -> 500 (the less the more easy)
+#define CARE_COLLISION_SCORE			20000
 
-#define BOSS_HP						100	 		// 100 -> ...
-#define BOSS_LVL_HP_ADD				50	 		// 10 -> ...
-#define BOSS_SPEED					1
-#define BOSS_X_POS_OFFSET			3 			// LEFT OFFSET
+#define BOSS_HP					100	 	// 100 -> ...
+#define BOSS_LVL_HP_ADD				50	 	// 10 -> ...
+#define BOSS_SPEED				1
+#define BOSS_X_POS_OFFSET			3 		// LEFT OFFSET
 #define BOSS_HIT_SCORE				67
 
-#define BOSS_BULLET_QUANTITY		30 			// 10 -> 30 (the more the harder)
-#define BOSS_SHOOT_PROBABILITY		100			// 50 -> 300 (the less the more difficult)
+#define BOSS_BULLET_QUANTITY			30 		// 10 -> 30 (the more the harder)
+#define BOSS_SHOOT_PROBABILITY			100		// 50 -> 300 (the less the more difficult)
 #define BOSS_BULLET_SPEED			1
 
 // =============== DRAW SPRITE DEFINES ===============
 
 #define GUI_STARSHIP_DRAW			Sprites16x16[0]
-#define GUI_STARSHIP_WSH_DRAW		Sprites16x16[1]
+#define GUI_STARSHIP_WSH_DRAW			Sprites16x16[1]
 
-#define GUI_ENEMYS_PLANE_DRAW		Sprites8x8[0]
+#define GUI_ENEMYS_PLANE_DRAW			Sprites8x8[0]
 #define GUI_EXPLOSION_DRAW			Sprites8x8[1]
 #define GUI_CARE_DRAW				Sprites8x8[2]
 #define GUI_HEART_DRAW				Sprites8x8[3]
@@ -86,9 +86,9 @@ typedef char ch;
 #define GUI_DRAW_BOSS_10LVL			Sprites32x32[3]
 
 #define GUI_DRAW_NFILL_8x8			Sprites8x8[4]
-#define GUI_DRAW_NFILL_16x16		Sprites16x16[4]
-#define GUI_DRAW_NFILL_24x24		Sprites24x24[0]
-#define GUI_DRAW_NFILL_32x32		Sprites32x32[0]
+#define GUI_DRAW_NFILL_16x16			Sprites16x16[4]
+#define GUI_DRAW_NFILL_24x24			Sprites24x24[0]
+#define GUI_DRAW_NFILL_32x32			Sprites32x32[0]
 
 // ============= INTERFACE DRAW DEFINES =============
 
@@ -99,11 +99,11 @@ typedef char ch;
 #define UI_STARSHIP_HP_X			DISPLAY_WIDTH - ((SPRITE8 + 1) * STARSHIP_MAX_HP)
 #define UI_STARSHIP_HP_Y			1
 
-#define UI_LVL_X					DISPLAY_WIDTH - 7
-#define UI_LVL_Y					DISPLAY_HEIGHT - 9
+#define UI_LVL_X				DISPLAY_WIDTH - 7
+#define UI_LVL_Y				DISPLAY_HEIGHT - 9
 
-#define UI_SCORE_X					1
-#define UI_SCORE_Y					1
+#define UI_SCORE_X				1
+#define UI_SCORE_Y				1
 
 // =============== GAME MACRO DEFINES ===============
 
@@ -122,11 +122,11 @@ typedef enum
 
 								MOVE_UP,
 
-				MOVE_UP_LEFT,			 MOVE_UP_RIGHT,
+				MOVE_UP_LEFT,			 		MOVE_UP_RIGHT,
 
-	MOVE_LEFT,					MOVE_NONE,				  MOVE_RIGHT,
+	MOVE_LEFT,						MOVE_NONE,				  MOVE_RIGHT,
 
-				MOVE_DOWN_LEFT,			  MOVE_DOWN_RIGHT,
+				MOVE_DOWN_LEFT,			  		MOVE_DOWN_RIGHT,
 
 								MOVE_DOWN
 
