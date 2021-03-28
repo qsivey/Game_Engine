@@ -6,7 +6,7 @@
 #include "ssd1306.h"
 #include "math.h"
 
-#define delay(ms)					HAL_Delay(ms)
+#define delay(ms)				HAL_Delay(ms)
 
 typedef uint8_t u8;
 typedef uint16_t u16;
