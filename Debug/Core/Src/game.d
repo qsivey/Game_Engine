@@ -1,0 +1,111 @@
+Core/Src/game.o: ../Core/Src/game.c ../Core/Inc/game.h ../Core/Inc/adc.h \
+ ../Core/Inc/main.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
+ ../Core/Inc/stm32f7xx_hal_conf.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Include/core_cm7.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Include/cmsis_version.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Include/cmsis_compiler.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Include/cmsis_gcc.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Include/mpu_armv7.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/system_stm32f7xx.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio_ex.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_adc.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c_ex.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h \
+ C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h \
+ ../Core/Inc/gpio.h ../Core/Inc/ssd1306.h ../Core/Inc/ssd1306_fonts.h \
+ ../Core/Inc/spi.h
+
+../Core/Inc/game.h:
+
+../Core/Inc/adc.h:
+
+../Core/Inc/main.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
+
+../Core/Inc/stm32f7xx_hal_conf.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Include/core_cm7.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Include/cmsis_version.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Include/cmsis_compiler.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Include/cmsis_gcc.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Include/mpu_armv7.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include/system_stm32f7xx.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio_ex.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_adc.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c_ex.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h:
+
+C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F7_V1.16.1/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h:
+
+../Core/Inc/gpio.h:
+
+../Core/Inc/ssd1306.h:
+
+../Core/Inc/ssd1306_fonts.h:
+
+../Core/Inc/spi.h:
