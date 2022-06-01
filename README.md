@@ -38,7 +38,7 @@ File Descriptions
 
 **Headers (.h):**
 
-- /adjvar/adjvar.h - Adjustable variables header file
+- adjvar/adjvar.h - Adjustable variables header file
 
 - /calib/calib.h - Calibration commands header file
 
@@ -81,6 +81,7 @@ How to use this library
 For more convenient work with the library, it is recommended to use the [SimpleBGC32 Serial API protocol
 specification](https://www.basecamelectronics.com/serialapi/).
 Each function beginning with SBGC32_... communicates with the SBGC32 device in a different way.
+
 *Note: for most -TX functions after sending data the SBGC32 device sends a confirmation command processed automatically in
 function body.*
 
