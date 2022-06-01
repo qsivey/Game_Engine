@@ -81,8 +81,8 @@ How to use this library
 For more convenient work with the library, it is recommended to use the [SimpleBGC32 Serial API protocol
 specification](https://www.basecamelectronics.com/serialapi/).
 Each function beginning with SBGC32_... communicates with the SBGC32 device in a different way.
-Note: for most -TX functions after sending data the SBGC32 device sends a confirmation command processed automatically in
-function body.
+*Note: for most -TX functions after sending data the SBGC32 device sends a confirmation command processed automatically in
+function body.*
 
 ### Initialization ###
 
@@ -105,10 +105,10 @@ function body.
 	SBGC32_DefaultInit(&SBGC_1, UartTransmitData, UartReceiveByte, GetAvailableBytes,
  	                   UartTransmitDebugData, GetTimeMs, SBGC_PROTOCOL_V2);
 
-notes:
+*Notes:
 
-- initialize the **UartTransmitDebugData** with NULL if you don't use debug mode.
+*- initialize the **UartTransmitDebugData** with NULL if you don't use debug mode.
 
-- SBGC_x - it's a general serial connection descriptor containing data to communicate with the SBGC32 device
+*- SBGC_x - it's a general serial connection descriptor containing data to communicate with the SBGC32 device
 
-- If you want to create your own gimbal communication driver, create it based on the type of such a structure in the library
+*- If you want to create your own gimbal communication driver, create it based on the type of such a structure in the library
