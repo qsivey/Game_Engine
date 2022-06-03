@@ -2,14 +2,14 @@ SimpleBGC32 Serial API Open Source C Library
 ==========================================
 [![Web-site](https://www.basecamelectronics.com/img/logo.basecam-small.png)](https://www.basecamelectronics.com)
 
-This library is helping instrument for communication between the SimpleBGC32 devices and different data processing devices.
+This library is a helping instrument for communication between the SimpleBGC32 devices and different data processing devices.
 For more comfortable interaction with the SBGC32 devices repository contents possible examples of implementations of the
-driver algorithms are presented. Include the library source files contents in the /sources folder. Also, you may use the
-pre-made driver files if you rather to create an application with the Arduino (AVR MCUs), STM32 or Linux OS systems.
+driver algorithms are presented. General source files are placed in the /sources folder. Also, you may include the
+pre-made driver files if you rather to create an application using the Arduino (AVR MCUs), STM32 or Linux OS systems.
 
 Pay attention to the **User Defined Parameter** macros contains in the core.h file. Uncomment the SYS_BIG_ENDIAN macro
-if your general control system has a BIG ENDIAN memory type. Uncomment the SBGC_DEBUG_MODE macro if you need to display
-debug information. Reducing the MAX_BUFF_SIZE you also reduce the load on the stack (256 is a optimal value).
+if your general processing system have a BIG ENDIAN memory type. Uncomment the SBGC_DEBUG_MODE macro if you need to display
+debug information. Reducing the MAX_BUFF_SIZE you also reduce the load on the stack (256 byte is a optimal value).
 
 ### Header library files involve: ###
 
@@ -25,7 +25,7 @@ debug information. Reducing the MAX_BUFF_SIZE you also reduce the load on the st
 
 - Executable functions
 
-The adjvar.c file also contains a data block "AdjVarsDebugInfoArray" with information about all adjustable variables
+The adjvar.c file contains a data block "AdjVarsDebugInfoArray" with auxiliary information about all adjustable variables
 at the time of the current version. The core.c and core.h files also contain a lot of general service code.
 
 Requirements
@@ -35,7 +35,7 @@ and at least **16 KB FLASH**.
 
 File Descriptions
 -----------------
-### All sources files have been placed into /sources folder. ###
+### Source files ###
 
 **Headers (.h):**
 
@@ -76,6 +76,10 @@ File Descriptions
 - /realtime/realtime.c - Realtime operations source file
 
 - /service/service.c - Service functions source file
+
+### Driver files ###
+
+...
 
 How to use this library
 -----------------------
