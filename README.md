@@ -127,11 +127,16 @@ specification](https://www.basecamelectronics.com/serialapi/).
 	#include "driver_Linux.h"
 	#include "core.h"
 
-	SBGC_1.Drv = malloc(sizeof(Driver_t));
-	DriverInit(SBGC_1.Drv, SBGC_SERIAL_PORT);
+	int main (void)
+	{
+		SBGC_1.Drv = malloc(sizeof(Driver_t));
+		DriverInit(SBGC_1.Drv, SBGC_SERIAL_PORT);
 
-	SBGC32_DefaultInit(&SBGC_1, PortTransmitData, PortReceiveByte, GetAvailableBytes,
-					   PrintDebugData, GetTimeMs, SBGC_PROTOCOL_V2);
+		SBGC32_DefaultInit(&SBGC_1, PortTransmitData, PortReceiveByte, GetAvailableBytes,
+						   PrintDebugData, GetTimeMs, SBGC_PROTOCOL_V2);
+
+		while (1);
+	}
 
 
 **STM32:**
@@ -153,6 +158,8 @@ specification](https://www.basecamelectronics.com/serialapi/).
 
 		SBGC32_DefaultInit(&SBGC_1, UartTransmitData, UartReceiveByte, GetAvailableBytes,
 						   UartTransmitDebugData, GetTimeMs, SBGC_PROTOCOL_V2);
+
+		while (1);
 	}
 	
 *stm32f7xx_it.c :*
@@ -189,11 +196,11 @@ specification](https://www.basecamelectronics.com/serialapi/).
 
 *Notes:*
 
-*- Initialize the **UartTransmitDebugData** with **NULL** if you don't use debug mode;*
+*- Default speed of SimpleBGC32 devices is a 115200 bits per second.*
+
+*- Initialize the **DebugData** functions with **NULL** if you don't want to use debug mode;*
 
 *- If you are connect SBGC32 through UART, RX pin must be pulled down;*
-
-*- SBGC_x - it's a general serial connection descriptor containing data to communicate with the SBGC32 device;*
 
 *- If you want to create your own gimbal communication driver, create it based on the necessary functions defined in the GeneralSBGC_t structure;*
 
@@ -201,11 +208,9 @@ specification](https://www.basecamelectronics.com/serialapi/).
 Strongly recommend increase this value to 256;*
 
 *- When SBGC32 device connected with Linux device you need to set **choose mode** for this connection to **read, write and executable** 
-in the terminal (sudo chmod a+rwx /dev/ttyUSBx);*
+using the terminal (sudo chmod a+rwx /dev/ttyUSBx);*
 
 *- The communication driver for STM32 devices supports HAL and LL libraries;*
-
-*- Default speed of SimpleBGC32 devices is a 115200 bits per second.*
 
 ### Data handling ###
 
