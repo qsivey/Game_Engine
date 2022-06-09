@@ -124,6 +124,15 @@ specification](https://www.basecamelectronics.com/serialapi/).
 
 **Linux:**
 
+	#include "driver_Linux.h"
+	#include "core.h"
+
+	SBGC_1.Drv = malloc(sizeof(Driver_t));
+	DriverInit(SBGC_1.Drv, SBGC_SERIAL_PORT);
+
+	SBGC32_DefaultInit(&SBGC_1, PortTransmitData, PortReceiveByte, GetAvailableBytes,
+					   PrintDebugData, GetTimeMs, SBGC_PROTOCOL_V2);
+
 
 **STM32:**
 
@@ -149,6 +158,7 @@ specification](https://www.basecamelectronics.com/serialapi/).
 *stm32f7xx_it.c :*
 
 	#include "driver_STM32.h"
+	#include "core.h"
 	
 	extern GeneralSBGC_t SBGC_1;
 	
@@ -179,7 +189,7 @@ specification](https://www.basecamelectronics.com/serialapi/).
 
 *Notes:*
 
-*- Initialize the **UartTransmitDebugData** with NULL if you don't use debug mode;*
+*- Initialize the **UartTransmitDebugData** with **NULL** if you don't use debug mode;*
 
 *- If you are connect SBGC32 through UART, RX pin must be pulled down;*
 
@@ -190,7 +200,8 @@ specification](https://www.basecamelectronics.com/serialapi/).
 *- Starting to work with the gimbal using Arduino don't forget check the **SERIAL_TX_BUFFER_SIZE** and **SERIAL_RX_BUFFER_SIZE** macros.
 Strongly recommend increase this value to 256;*
 
-*- When SBGC32 device connected with Linux device you need to set **chmod** to **-rwx** in the terminal (sudo chmod -rwx /dev/ttyUSBx);*
+*- When SBGC32 device connected with Linux device you need to set **choose mode** for this connection to **read, write and executable** 
+in the terminal (sudo chmod a+rwx /dev/ttyUSBx);*
 
 *- The communication driver for STM32 devices supports HAL and LL libraries;*
 
