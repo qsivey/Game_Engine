@@ -119,7 +119,7 @@ specification](https://www.basecamelectronics.com/serialapi/).
 		pinMode(SERIAL2_RX_PIN, INPUT_PULLUP);
 
 		SBGC32_DefaultInit(&SBGC_1, UartTransmitData, UartReceiveByte, GetAvailableBytes,
-						   UartTransmitDebugData, GetTimeMs, SBGC_PROTOCOL_V2);			   	
+				UartTransmitDebugData, GetTimeMs, SBGC_PROTOCOL_V2);			   	
 	}
 
 **Linux:**
@@ -133,7 +133,7 @@ specification](https://www.basecamelectronics.com/serialapi/).
 		DriverInit(SBGC_1.Drv, SBGC_SERIAL_PORT);
 
 		SBGC32_DefaultInit(&SBGC_1, PortTransmitData, PortReceiveByte, GetAvailableBytes,
-						   PrintDebugData, GetTimeMs, SBGC_PROTOCOL_V2);
+				PrintDebugData, GetTimeMs, SBGC_PROTOCOL_V2);
 
 		while (1);
 	}
@@ -157,7 +157,7 @@ specification](https://www.basecamelectronics.com/serialapi/).
 		DriverInit(SBGC_1.Drv, SBGC_SERIAL_PORT, INTERNAL_MAIN_TIMER);
 
 		SBGC32_DefaultInit(&SBGC_1, UartTransmitData, UartReceiveByte, GetAvailableBytes,
-						   UartTransmitDebugData, GetTimeMs, SBGC_PROTOCOL_V2);
+				UartTransmitDebugData, GetTimeMs, SBGC_PROTOCOL_V2);
 
 		while (1);
 	}
