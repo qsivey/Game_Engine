@@ -9,13 +9,13 @@ For more comfortable interaction with the SBGC32 devices repository contents pos
 driver algorithms are presented. General source files are placed in the /sources folder. Also, you may include the
 pre-made driver files if you rather to create an application using the Arduino (AVR MCUs), STM32 or Linux OS systems.
 
-Pay attention to the **User Defined Parameter** macros contains in the core.h file. Uncomment the SYS_BIG_ENDIAN macro
-if your general processing system have a BIG ENDIAN memory type. Uncomment the SBGC_DEBUG_MODE macro if you need to display
+Pay attention to the **User Defined Parameter** constants, contains in the core.h file. Uncomment the SYS_BIG_ENDIAN constant
+if your general processing system have a BIG ENDIAN memory type. Uncomment the SBGC_DEBUG_MODE constant if you need to display
 debug information. Reducing the MAX_BUFF_SIZE you also reduce the load on the stack (256 byte is a optimal value).
 
 ### Header library files involve: ###
 
-- Macros
+- Macros and constant
 
 - Auxiliary flags and their functions
 
@@ -204,7 +204,7 @@ specification](https://www.basecamelectronics.com/serialapi/).
 
 *- If you want to create your own gimbal communication driver, create it based on the necessary functions defined in the GeneralSBGC_t structure;*
 
-*- Starting to work with the gimbal using Arduino don't forget check the **SERIAL_TX_BUFFER_SIZE** and **SERIAL_RX_BUFFER_SIZE** macros.
+*- Starting to work with the gimbal using Arduino don't forget check the **SERIAL_TX_BUFFER_SIZE** and **SERIAL_RX_BUFFER_SIZE** constants.
 Strongly recommend increase this value to 256;*
 
 *- When SBGC32 device connected with Linux device you need to set **choose mode** for this connection to **read, write and executable** 
